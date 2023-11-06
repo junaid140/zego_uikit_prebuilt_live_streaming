@@ -1,0 +1,2 @@
+/// @nodoc
+const disableChatRoomPropertyKey = 'enableChat';

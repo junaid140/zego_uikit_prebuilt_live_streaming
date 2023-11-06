@@ -117,7 +117,11 @@ class ZegoLivePageSurfaceState extends State<ZegoLivePageSurface>
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Expanded(
-                  child: Container(color: Colors.transparent),
+                  child: GestureDetector(
+                      onTap: (){
+                        FocusScope.of(context).requestFocus(new FocusNode());
+                      },
+                      child: Container(color: Colors.transparent)),
                 ),
                 bottomBar(),
               ],

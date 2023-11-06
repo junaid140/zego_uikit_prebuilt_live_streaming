@@ -1,4 +1,6 @@
 // Flutter imports:
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 // Package imports:
@@ -61,7 +63,55 @@ class _ZegoInRoomLiveMessageViewState extends State<ZegoInRoomLiveMessageView> {
                   );
                 },
           ),
+          // FadeEndListView(),
+          // Positioned(
+          //   top: 0,
+          //   left: 0,
+          //   right: 0,
+          //   child: Container(
+          //     height: 100, // Adjust the height of the blur
+          //     child: BackdropFilter(
+          //       filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10), // Adjust blur intensity
+          //       child: Container(
+          //         color: Colors.transparent,
+          //       ),
+          //     ),
+          //   ),
+          // ),
+          // Positioned(
+          //   bottom: 0,
+          //   left: 0,
+          //   right: 0,
+          //   child: Container(
+          //     height: 100, // Adjust the height of the blur
+          //     child: BackdropFilter(
+          //       filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10), // Adjust blur intensity
+          //       child: Container(
+          //         color: Colors.transparent,
+          //       ),
+          //     ),
+          //   ),
+          // ),
+
         ],
+      ),
+    );
+  }
+}
+class FadeEndListView extends StatelessWidget {
+  const FadeEndListView({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 50,
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10), // Adjust blur intensity
+        child: Container(
+          color: Colors.transparent,
+        ),
       ),
     );
   }

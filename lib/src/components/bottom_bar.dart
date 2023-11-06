@@ -280,7 +280,7 @@ class _ZegoBottomBarState extends State<ZegoBottomBar> {
             if (!isEmpty) send();
           },
           icon: ButtonIcon(
-            backgroundColor: Colors.red,
+            backgroundColor: Color(0xffA30000),
             icon: isEmpty
                 ? UIKitImage.asset(StyleIconUrls.iconSendDisable)
                 : UIKitImage.asset(StyleIconUrls.iconSend),
